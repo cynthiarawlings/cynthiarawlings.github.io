@@ -1,0 +1,125 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+    
+    
+    
+    /*----------- HEADER --------------*/
+    header img {width: auto;}
+    header h1 {font-size: 2.5rem;}
+    header h2 {font-size: 2rem;}
+    
+    
+    /*----------- NAVIGATION --------------*/
+        nav ul {margin-left: 2%;}
+        nav ul li {float: left;}
+    
+        nav ul li a{padding: .5rem 1rem;}
+
+        nav button {
+            display: none;
+        }
+        
+        nav ul.hide {
+            display: block;
+        }
+    
+    /*----------- MAIN --------------*/
+    .colors {
+        display: flex;
+    }
+    
+    .profile-picture {
+        width: auto;
+       /* float: left;*/
+    }
+
+    h1 {font-size: 2.5rem;}
+
+    .fiveDayForecast {
+        display: block;
+    }
+    
+    .weather-forecast-table h3 {
+        background-color: #94E1F2;
+        color: black;
+        margin: 0;
+        padding: 0.25rem;
+        text-align: center;
+        border-bottom: 1px solid;
+       
+    }
+    
+    .weather-forecast-table span {
+        margin: 0;
+        padding: 0.25rem;
+        text-align: center;
+    }
+
+    .weather-forecast-table {
+        display: flex;
+        
+    }
+
+    .weatherIcon {
+        width: 5rem;
+    }
+
+    .tableItem {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+    }
+
+    .tableItemContent {
+        padding: 1rem;
+        
+    }
+
+    .tableItem5 {
+        border-right: 1px solid;
+    }
+
+    .article-image {
+        width: 300px;
+        float: right;
+        margin-left: 1rem;
+        position: relative;
+        
+    }
+
+    .top {
+        display: block;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        float: left;
+        width: 45%;
+    }
+
+    .small-grid {
+        min-width: 27rem;
+        max-width: 42rem;
+    }
+
+    .small-grid {
+        padding: 0 2%;
+    }
+    /*----------- Google Maps    
+    --------------*/
+    .google-maps-large {
+        float: right;
+        width: 55%;
+    }
+    
+    /*----------- FOOTER --------------*/
+        
+    } /* end of media query */
