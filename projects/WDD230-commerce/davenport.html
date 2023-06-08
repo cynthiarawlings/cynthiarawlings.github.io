@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Davenport's Chamber of Commerce.">
+    <meta name="author" content="Cynthia Rawlings">
+    <title>City of Davenport: Davenport Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <div class="header-wrapper">
+        <header class="clearfix">
+            <!-- logo needs to be optamized -->
+            <div class="main-header">
+                <a href="index.html"><img class="logo" src="images/logo100.png" alt="Chamber Logo" /></a>
+                <h1>Davenport Chamber of Commerce</h1>
+                <button class="hamburger-menu" onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <nav class="clearfix">
+                <ul id="primaryNav" class="hide">
+                    <!-- Navigation is reversed because of flex -->
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="membership.html">Join</a></li>
+                    <li class="active"><a href="davenport.html">Davenport</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Filler prevents Nav from overlapping the banner -->
+    <div class="filler"></div>
+
+    <!-- Banner -->
+    <div class="main-banner">
+        <div>
+            <picture>
+                <source media="(max-width: 544px)" srcset="images/davenport/davenport-banner544.jpg">
+                <source media="(max-width: 1008px)" srcset="images/davenport/davenport-banner1008.jpg">
+                <img class="default" src="images/davenport/davenport-banner2000.jpg" alt="Davenport City">
+            </picture>
+        </div>
+    </div>
+
+    <!-- Page Content for Max-width -->
+    <div class="content">
+        <!-- Page Title -->
+        <h1 class="page-title">City of Davenport</h1>
+        <!-- Row 1 -->
+        <div class="slider-history-grid">
+            <!-- Image Slider -->
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <img src="images/davenport/image-slider-1/beach.jpg" alt="Beach" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/davenport/image-slider-1/city-at-sunset.jpg" alt="City at sunset"
+                        style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/davenport/image-slider-1/city-by-the-ocean.jpg" alt="City by the ocean"
+                        style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+            <!-- History -->
+            <div class="card history">
+                <h2>History of Davenport</h2>
+                <p>The settlement in the area now known as Davenport was established in 1838 when the U.S. military set
+                    up
+                    Fort Davenport during the Second Seminole War, about 12 miles north of the present site of
+                    Davenport.
+                    The fort was one of a number built at 20-mile intervals along a trail from Fort Brooke to Fort
+                    Mellon.
+                    The fort only lasted a few years.
+                </p>
+                <p>The fort was named for Colonel William Davenport, who served as the local U.S. commander in the war.
+                    There is no known documentary evidence to support an alternative claim that the city was named for a
+                    railroad conductor. The modern city of Davenport had its start in the 1880s when the South Florida
+                    Railroad was extended to that point.
+                </p>
+            </div>
+        </div> <!-- End row 1 -->
+
+        <!-- Row 2 -->
+        <div class="demographics-grid">
+            <!-- Pie Chart -->
+            <div class="card population-graph demographics">
+                <h2>Population by Race</h2>
+                <div id="piechart"></div>
+            </div>
+
+            <!-- Age and Gender -->
+            <div class="card age-info demographics">
+                <div class="demographics-info-grid">
+                    <!-- Age and Gender Title -->
+                    <h2 class="pop-by-age-title">Population by Age</h2>
+                    <!-- Gender -->
+                    <div class="demo-item gender">
+                        <h3>Median Age by Gender</h3>
+                        <p>Male: 36.1</p>
+                        <p>Female: 34.3</p>
+                        <p>Total: 35.4</p>
+                    </div>
+                    <!-- Dependance -->
+                    <div class="demo-item dependancy">
+                        <h3>Age Dependency</h3>
+                        <p>Age Dependency Ratio: 66.9</p>
+                        <p>Old age: 66.9</p>
+                        <p>Old Age Dependency Ratio: 21.7</p>
+                        <p>Child Dependency Ratio: 45.2</p>
+                    </div>
+                    <!-- Ratio -->
+                    <div class="demo-item ratio">
+                        <h3>Gender Ratio</h3>
+                        <p>Female: 2,512 51.52%</p>
+                        <p>Male: 2,270 48.48%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ownership Table -->
+            <div class="card household-table demographics">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Household Types</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Type</th>
+                            <th>Owner</th>
+                            <th>Renter</th>
+                        </tr>
+                        <tr>
+                            <td>Married</td>
+                            <td>89.8%</td>
+                            <td>10.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Female</td>
+                            <td>90.1%</td>
+                            <td>9.9%</td>
+                        </tr>
+                        <tr>
+                            <td>All</td>
+                            <td>90.2%</td>
+                            <td>9.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Non Family</td>
+                            <td>90.6%</td>
+                            <td>9.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Male</td>
+                            <td>100%</td>
+                            <td>0%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">90.2% Rate of Home Ownership</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div> <!-- End row 2 -->
+
+        <!-- Row 3 -->
+        <div class="commitment-grid">
+            <!-- Commitment-->
+            <div class="commitment">
+                <h2>Commitment</h2>
+                <p>We are working to build the public’s trust and confidence by providing the best in customer service,
+                    assured
+                    quality and the efficient use of public funds.
+                </p>
+                <p>Our mission is to treat our customers with such professionalism and concern that we improve their
+                    perception
+                    of government. Our shared values are integrity, innovation, compassion, and teamwork. Focus Points -
+                    Accountability, Efficiency, Leadership Customer Service
+                </p>
+            </div>
+
+            <!-- image slider -->
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <img src="images/davenport/image-slider-2/customer-service-hallway.jpg" alt="Employee at a desk"
+                        style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="images/davenport/image-slider-2/customer-service-laptop.jpg"
+                        alt="Employee on thier laptop" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="images/davenport/image-slider-2/customer-service-smiling-man.jpg" alt="Smiling employee"
+                        style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+        </div> <!-- End row 3 -->
+
+        <!-- Rows 4+ -->
+        <!-- Event Title -->
+        <h2 class="event-title">Upcoming Events</h2>
+        <!-- Events -->
+        <div class="event-grid">
+            <div class="card event">
+                <h3>Camp READY! Haines City</h3>
+                <p>6/30/2021 - 7/22/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=392857&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Rocky Railway VBS</h3>
+                <p>7/19/2021 - 7/21/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=395781&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Dining with Diabetes</h3>
+                <p>7/20/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=396841&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Latin Nights at Balmoral Bar & Grill</h3>
+                <p>7/21/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=397150&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Christmas in July Online Charity Auction</h3>
+                <p>7/23/2021 - 7/25/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=396102&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Balmoral Bar & Grill - Under the Sea with Mermaid Emily</h3>
+                <p>7/25/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=396618&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Dining with Diabetes</h3>
+                <p>7/27/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=396841&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Karaoke Night at Balmoral</h3>
+                <p>7/28/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=396833&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Finally Friday</h3>
+                <p>7/30/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=396386&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+            <div class="card event">
+                <h3>Balmoral Bar & Grill - Latin Day, All Day! </h3>
+                <p>7/31/2021</p>
+                <a href="https://www.chamberorganizer.com/Calendar/moreinfo_responsive.php?eventid=396619&org_id=HAIN"
+                    target="_blank">Learn More &#x203A;</a>
+            </div>
+        </div> <!-- End Rows 4+ -->
+    </div>
+
+    <!-- Top Footer -->
+    <div class="footer-top-wrapper">
+        <footer>
+            <div class="footer-widgets">
+                <!-- Contact -->
+                <div class="section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Chamber Office: </strong><br>863-422-3751<br>
+                        <strong>Fax: </strong><br>863-422-4704<br>
+                        <strong>Member Tech Support: </strong><br>855-233-6362<br>
+                        <strong>General Chamber Information: </strong><br>info@davenportchamber.com<br>
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="davenport.html">Davenport</a></li>
+                        <li><a href="membership.html">Join</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="section">
+                    <!-- optamize -->
+                    <a href="https://www.facebook.com/" target="_blank"><img class="" src="images/facebook.png"
+                            alt="Facebook" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="" src="images/twitter.png"
+                            alt="Twitter" /></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="" src="images/youtube.png"
+                            alt="Youtube" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="" src="images/instagram.png"
+                            alt="Instagram" /></a>
+
+                    <!-- Join-->
+                    <h3>Become a Member</h3>
+                    <br>
+                    <button onClick="toMembership()">Join Now</button>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- End Top Footer -->
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom-wrapper">
+        <div class="footer-bottom">
+            <p>©<span id="year"></span> Davenport Chamber of Commerce; Last Updated: <span id="lastUpdated"></span>
+            </p>
+        </div>
+    </div> <!-- End Bottom Footer -->
+    <!-- JavaScript -->
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

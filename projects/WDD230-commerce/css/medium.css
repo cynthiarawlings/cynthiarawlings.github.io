@@ -1,0 +1,155 @@
+/* 35em is also 560px (if basefont is 16px) */
+
+@media only screen and (min-width: 35rem) {
+    /*----------- BODY --------------*/
+    /*----------- HEADER --------------*/
+    /*----------- NAVIGATION --------------*/
+    header button {
+        margin-left: auto;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    /*----------- MAIN --------------*/
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .mission {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .contact {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .events {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .membership {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .main-banner h1 {
+        font-size: 3rem;
+    }
+    .contact-flex {
+        display: flex;
+    }
+    .space {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .contact h2 {
+        margin-left: 0.5rem;
+    }
+    .weather-grid .card {
+        background-color: transparent;
+    }
+    .weather-top-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .alert {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #forecast {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .forecast-box {
+        padding: 1rem;
+    }
+    .forecast-name {
+        margin: 0;
+        padding: 0;
+    }
+    .forecast-temp {
+        margin: 0;
+        padding: 0;
+    }
+    .weather-container .weather-grid .alert {
+        margin: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .full-width-current {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    /*----------- Davenport City --------------*/
+    .demographics-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .pop-by-age-title {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .gender {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .dependancy {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .event-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .commitment {
+        margin: 0;
+    }
+    .history {
+        margin: 0;
+    }
+    /* Membership */
+    .membership-grid {
+        display: grid;
+        padding: 1rem;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .membership-options {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    /* Directory */
+    .directory-default {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .directory-grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .directory-block {
+        display: block;
+    }
+    .button-box {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* Contact */
+    .executive, .board, .staff {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*----------- FOOTER --------------*/
+    .footer-widgets {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

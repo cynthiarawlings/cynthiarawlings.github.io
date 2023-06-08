@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Davenport's Chamber of Commerce.">
+    <meta name="author" content="Cynthia Rawlings">
+    <title>Home: Davenport Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <div class="header-wrapper">
+        <header class="clearfix">
+            <!-- image needs to be optamized -->
+            <div class="main-header">
+                <a href="index.html"><img class="logo" src="images/logo100.png" alt="Chamber Logo" /></a>
+                <h1>Davenport Chamber of Commerce</h1>
+                <button class="hamburger-menu" onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <nav class="clearfix">
+                <ul id="primaryNav" class="hide">
+                    <!-- Navigation is reversed because of flex -->
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="membership.html">Join</a></li>
+                    <li><a href="davenport.html">Davenport</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="filler"></div>
+
+    <!-- Weather Alert -->
+    <div id="alert-top" class="card alert">
+        <div class="flex-end">
+            <button id="weather-close" onclick="closeAlertTop()">&#10006;</button>
+        </div>
+        <h2>Warning!</h2>
+        <span id="weather-alert-top"></span>
+    </div>
+
+
+    <div class="main-banner">
+        <div>
+            <h1>Davenport Chamber of Commerce</h1>
+            <picture>
+                <source media="(max-width: 544px)" srcset="images/home/home-banner544.jpg">
+                <source media="(max-width: 1008px)" srcset="images/home/home-banner1008.jpg">
+                <img class="default" src="images/home/home-banner2000.jpg" alt="Davenport City">
+            </picture>
+        </div>
+    </div>
+
+    <main>
+        <div class="main-grid">
+            <!-- Description/ Goals/ Purpose -->
+            <div class="card mission">
+                <picture>
+                    <source media="(max-width: 391px)" srcset="images/home/mission391.jpg">
+                    <source media="(max-width: 522px)" srcset="images/home/mission522.jpg">
+                    <img class="default" src="images/home/mission968.jpg" alt="Smiling employee.">
+                </picture>
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>Promote small businesses and build the public’s trust and confidence by providing the best in
+                        customer service, assured quality, and the efficient use of public funds, treating our
+                        customers
+                        with such professionalism and concern that we improve their perception of government.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="card contact">
+                <h2>Contact Us</h2>
+                <div class="contact-flex">
+                    <div class="space">
+                        <h3>Chamber Hours of Operation:</h3>
+                        <p>Monday - Thursday: 9:00 AM - 4:00 PM<br>
+                            Fridays: 10:00 AM - 3:00 PM<br>
+                            <i>Closed Weekends and Holidays</i>
+                        </p>
+                    </div>
+                    <div class="space">
+                        <h3>Phone Numbers:</h3>
+                        <p><strong>Chamber Office: </strong>863-422-3751<br>
+                            <strong>Fax: </strong>863-422-4704<br>
+                            <strong>Member Tech Support: </strong>855-233-6362<br>
+                            <strong>General Chamber Information: </strong>info@davenportchamber.com<br>
+                        </p>
+                    </div>
+
+                    <div class="space">
+                        <h3>Location and Mailing</h3>
+                        <p class="location"><strong>Davenport Chamber of Commerce</strong><br>
+                            35610 Hwy 27<br>
+                            PO Box 986<br>
+                            Davenport, FL 33845
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space">
+                    <form method="get" action="comment-thanks.html">
+                        <h3>Send a Message</h3>
+                        <label class="">Name*<br>
+                            <input type="text" name="name" pattern="[A-Za-z ]{3,}" required>
+                        </label><br>
+                        <label class="">Email*<br>
+                            <input type="email" name="email" placeholder="someone@gmail.com" required>
+                        </label><br>
+                        <label class="">Comment*<br>
+                            <textarea class="text-box" name="comment" required></textarea>
+                        </label><br>
+                        <input type="submit" value="Send my Comment" class="submitBtn">
+                    </form>
+                </div>
+            </div>
+
+            <!-- Advertisements -->
+            <div class="card advertisement left-ad">
+                <picture>
+                    <source media="(max-width: 391px)" srcset="images/home/ad-cemex391.jpg">
+                    <source media="(max-width: 476px)" srcset="images/home/ad-cemex476.jpg">
+                    <img class="default" src="images/home/ad-cemex522.jpg" alt="Cemex cement truck.">
+                </picture>
+                <div class="text">
+                    <h2>Cemex</h2>
+                    <h3>Building the Future</h3>
+                    <p>Ready mix concrete supplier in Polk County, Florida<br>
+                        <strong>Address: </strong>1205 US-17, Davenport, FL 33837<br>
+                        <strong>Phone: </strong>(800) 992-3639<br><br>
+                        <a href="https://www.cemexusa.com/" target="_blank">cemexusa.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card advertisement center-ad">
+                <picture>
+                    <source media="(max-width: 391px)" srcset="images/home/ad-gill391.jpg">
+                    <source media="(max-width: 476px)" srcset="images/home/ad-gill476.jpg">
+                    <img class="default" src="images/home/ad-gill522.jpg" alt="Welding.">
+                </picture>
+                <div class="text">
+                    <h2>Gill Manufacturing</h2>
+                    <h3>Fabricators with a reputation</h3>
+                    <p><strong>Address: </strong>110 U.S. Hwy 17-92 N S, Davenport, FL 33837<br>
+                        <strong>Phone: </strong>(863) 422-5711<br><br>
+                        <a href="https://www.gillmfg.com/" target="_blank">gillmfg.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card advertisement right-ad">
+                <picture>
+                    <source media="(max-width: 391px)" srcset="images/home/ad-zion391.jpg">
+                    <source media="(max-width: 476px)" srcset="images/home/ad-zion476.jpg">
+                    <img class="default" src="images/home/ad-zion522.jpg" alt="Handing over a document.">
+                </picture>
+                <div class="text">
+                    <h2>Zion Tax & Insurance</h2>
+                    <h3>Fill your taxes with experts</h3>
+                    <p>Accounting firm in Polk County, Florida<br>
+                        <strong>Address: </strong> 40906 US-27, Davenport, FL 33837<br>
+                        <strong>Phone: </strong>(863) 307-8442<br><br>
+                        <a href="https://www.ziontaxandinsurance.com/" target="_blank">ziontaxandinsurance.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Events -->
+            <div class="card events">
+                <h2>Chamber Events</h2>
+                <ul>
+                    <li>7/13/2021<br>
+                        Dining with Diabetes
+                    </li>
+                    <li>7/14/2021<br>
+                        Karaoke Night at Balmoral
+                    </li>
+                    <li>7/15/2021<br>
+                        Chamber Luncheon - Haines City CRA Update
+                    </li>
+                    <li>7/16/2021<br>
+                        Relay for Life of Polk County "Passport to a Cure"
+                    </li>
+                    <li>7/17/2021 - 7/18/2021<br>
+                        A Trip Through the Tonys presented by Haines City Community Theatre
+                    </li>
+                    <li>7/19/2021 - 7/21/2021<br>
+                        Rocky Railway VBS
+                    </li>
+                    <li>7/20/2021<br>
+                        Dining with Diabetes
+                    </li>
+                    <li>7/21/2021<br>
+                        Latin Nights at Balmoral Bar & Grill
+                    </li>
+                    <li>7/23/2021 - 7/25/2021<br>
+                        Christmas in July Online Charity Auction
+                    </li>
+                    <li>7/25/2021<br>
+                        Balmoral Bar & Grill - Under the Sea with Mermaid Emily
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Call to Action/ Membership/ Join -->
+            <div class="card membership">
+                <picture>
+                    <source media="(max-width: 391px)" srcset="images/home/membership391.jpg">
+                    <source media="(max-width: 522px)" srcset="images/home/membership522.jpg">
+                    <img class="default" src="images/home/membership968.jpg" alt="Hands together.">
+                </picture>
+                <div class="membership-text">
+                    <h2>Become a Member</h2>
+                    <p>Picture the Chamber as the community's front door, both as a storefront and public relations
+                        office
+                        for all its members and residents. Members benefit from referrals to the hundreds of monthly
+                        phone
+                        calls, letters, and visitors looking for things to do, places to eat and shop, even homes to
+                        buy.
+                        Start today to put your marketing partner to work for you. For additional information, call
+                        863-422-3751.
+                    </p>
+                    <button onclick="toMembership()">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Weather Section -->
+    <div class="weather-container">
+        <h2 class="title">Davenport Weather</h2>
+        <!-- Current Weather -->
+        <div class="weather-grid">
+            <div id="weather-top-row" class="weather-top-row">
+                <div id="current-weather-container" class="card current">
+                    <!-- image needs to be optamized -->
+                    <div>
+                        <div class="text-on-image">
+                            <h2>Current Weather</h2>
+                            <div class="current-weather">Weather: <span id="current-weather"></span><br>
+                                Temperature: <span id="current-temperature"></span><br>
+                                Humidity: <span id="current-humidity"></span><br>
+                                Feels Like: <span id="current-feels-like"></span>
+                            </div>
+                        </div>
+                        <picture>
+                            <source media="(max-width: 544px)" srcset="images/home/weather-banner544.jpg">
+                            <source media="(max-width: 1008px)" srcset="images/home/weather-banner1008.jpg">
+                            <img class="default" src="images/home/weather-banner2000.jpg" alt="Palm trees at sunset.">
+                        </picture>
+                    </div>
+                </div>
+
+                <!-- Weather Alert -->
+                <div id="alert" class="card alert">
+                    <h2>Warning!</h2>
+                    <span id="weather-alert-bottom"></span>
+                </div>
+            </div>
+
+            <!-- Weather Forecast -->
+            <div class="forecast-container">
+                <h3>Forecast</h3>
+                <div class="card" id="forecast"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-top-wrapper">
+        <footer>
+            <div class="footer-widgets">
+                <div class="section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Chamber Office: </strong><br>863-422-3751<br>
+                        <strong>Fax: </strong><br>863-422-4704<br>
+                        <strong>Member Tech Support: </strong><br>855-233-6362<br>
+                        <strong>General Chamber Information: </strong><br>info@davenportchamber.com<br>
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="davenport.html">Davenport</a></li>
+                        <li><a href="membership.html">Join</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <!-- optamize -->
+                    <a href="https://www.facebook.com/" target="_blank"><img class="" src="images/facebook.png"
+                            alt="Facebook" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="" src="images/twitter.png"
+                            alt="Twitter" /></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="" src="images/youtube.png"
+                            alt="Youtube" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="" src="images/instagram.png"
+                            alt="Instagram" /></a>
+
+                    <h3>Become a Member</h3>
+                    <br>
+                    <button onClick="toMembership()">Join Now</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="footer-bottom-wrapper">
+        <div class="footer-bottom">
+            <p>©<span id="year"></span> Davenport Chamber of Commerce; Last Updated: <span id="lastUpdated"></span> </p>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

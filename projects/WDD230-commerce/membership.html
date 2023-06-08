@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Davenport's Chamber of Commerce.">
+    <meta name="author" content="Cynthia Rawlings">
+    <title>Membership Application: Davenport Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <div class="header-wrapper">
+        <header class="clearfix">
+            <!-- logo needs to be optamized -->
+            <div class="main-header">
+                <a href="index.html"><img class="logo" src="images/logo100.png" alt="Chamber Logo" /></a>
+                <h1>Davenport Chamber of Commerce</h1>
+                <button class="hamburger-menu" onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <nav class="clearfix">
+                <ul id="primaryNav" class="hide">
+                    <!-- Navigation is reversed because of flex -->
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active"><a href="membership.html">Join</a></li>
+                    <li><a href="davenport.html">Davenport</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Filler prevents Nav from overlapping the banner -->
+    <div class="filler"></div>
+
+    <!-- Banner -->
+    <div class="main-banner">
+        <div>
+            <picture>
+                <source media="(max-width: 544px)" srcset="images/membership/membership-banner544.jpg">
+                <source media="(max-width: 1008px)" srcset="images/membership/membership-banner1008.jpg">
+                <img class="default" src="images/membership/membership-banner2000.jpg" alt="Davenport City">
+            </picture>
+        </div>
+    </div>
+
+    <main>
+        <!-- Title -->
+        <h1>Become a Member</h1>
+        <!-- Benifits -->
+        <p>Did you know that adding the Chamber's tools to your tool box gives you more choices for less expense than
+            anything else in your advertising plan? To receive the greatest benefit from your investment, be sure to
+            take advantage of all the Chamber has to offer!
+        </p>
+        <p>
+            Successful business people recognize the need for reaching their audience. The act of calling public
+            attention to your business goes by many names including advertising, marketing and promotion. Your Chamber
+            has the perfect tools to help you accomplish visibility.
+        </p>
+
+        <!-- Membership Grid -->
+        <div class="membership-grid">
+            <div class="form">
+                <!-- Form -->
+                <form method="get" action="thanks.html">
+                    <!-- Member Info -->
+                    <h2>Step 1</h2>
+                    <fieldset>
+                        <legend>Member Info</legend>
+                        <label>First Name *<br>
+                            <input type="text" name="fname" pattern="[A-Za-z ]{3,}" required>
+                        </label><br>
+                        <label>Last Name *<br>
+                            <input type="text" name="lname" pattern="[A-Za-z ]{3,}" required>
+                        </label><br>
+                        <label>Title<br>
+                            <input type="text" name="title" pattern="[A-Za-z ]{3,}">
+                        </label><br>
+                        <label>Email *<br>
+                            <input type="email" name="email" placeholder="someone@gmail.com" required>
+                        </label><br>
+                        <label>Cell Phone<br>
+                            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="123-444-5678">
+                        </label>
+                    </fieldset>
+
+                    <!-- Business Info -->
+                    <h2>Step 2</h2>
+                    <fieldset>
+                        <legend>Business Info</legend>
+                        <label>Business Name *<br>
+                            <input type="text" name="company" placeholder="Company, Inc." required>
+                        </label>
+                        <label>Business Website<br>
+                            <input type="url" name="website" placeholder="www.example.com">
+                        </label>
+                        <label class="">Business Description<br>
+                            <textarea class="text-box" name="description"></textarea>
+                        </label><br>
+                    </fieldset><br>
+
+                    <!-- Address -->
+                    <fieldset>
+                        <legend>Business Address</legend>
+                        <label>Street<br>
+                            <input type="text" name="street">
+                        </label>
+                        <label>City<br>
+                            <input type="text" name="city">
+                        </label>
+                        <label>State<br>
+                            <input type="text" name="state">
+                        </label>
+                        <label>Zip<br>
+                            <input type="number" name="zip">
+                        </label>
+                        <label>Country<br>
+                            <input type="text" name="country">
+                        </label>
+                    </fieldset>
+
+                    <h2>Step 3</h2>
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <p>Details Below</p>
+                        <label class="sbs">
+                            <input type="radio" name="level" value="non-profit"> Non-profit $100
+                        </label>
+                        <label class="sbs">
+                            <input type="radio" name="level" value="bronze"> Bronze $200
+                        </label>
+                        <label class="sbs">
+                            <input type="radio" name="level" value="silver"> Silver $400
+                        </label>
+                        <label class="sbs">
+                            <input type="radio" name="level" value="gold"> Gold $1,000
+                        </label>
+                    </fieldset>
+                    <!-- Submit Button -->
+                    <input type="submit" value="Send my Application" class="submitBtn">
+                </form>
+            </div><!-- End Form -->
+
+            <div class="membership-options">
+                <h2>Membership Options</h2>
+                <div class="non-profit">
+                    <h3>Non-profit: $100</h3>
+                    <ul>
+                        <li>Identified as a member of the Davenport Chamber member with window decal</li>
+                        <li>A basic listing in the Davenport Chamber website business directory</li>
+                        <li>A basic listing in the Davenport Chamber Relocation Guide & Directory</li>
+                        <li>Use of Davenport Chamber logo in marketing and advertising materials</li>
+                        <li>Community visibility & credibility as a Chamber member</li>
+                        <li>Business development opportunities</li>
+                        <li>Access to Chamber communications, including the weekly e-newsletter</li>
+                        <li>Member 2 Member discounts</li>
+                        <li>Legislative Advocacy</li>
+                        <li>Access to advertising & promotional opportunities</li>
+                        <li>Invitation to annual Signature Events</li>
+                        <li>1 Ribbon Cutting Ceremony with free social media posting</li>
+                        <li>Access to US Chamber services & discounts</li>
+                        <li>Office Depot National Chamber Program discounts</li>
+                        <li>Referrals from the Chamber</li>
+                        <li>Invitation to New Member Orientation Luncheon</li>
+                        <li>Volunteer opportunities with committee participation</li>
+                    </ul>
+                </div> <!-- End Non-profit -->
+                <div class="bronze">
+                    <h3>Bronze: $200</h3>
+                    <ul>
+                        <li>All Non-profit Benifits</li>
+                        <li>1 Anniversary Ribbon Cutting with free social media posting</li>
+                        <li>1 set of member mailing labels</li>
+                        <li>1 We Noticed Ceremony with free social media posting</li>
+                        <li>New member recognition on social media</li>
+                        <li>6 Tickets to the Monthly Chamber Breakfast</li>
+                        <li>Additional website directory listing</li>
+                        <li>Complimentary certificate of origin & notary services</li>
+                    </ul>
+                </div> <!-- End Bronze -->
+                <div class="silver">
+                    <h3>Silver: $400</h3>
+                    <ul>
+                        <li>All Non-profit and Bronze Benifits</li>
+                        <li>12 Tickets to the Monthly Chamber Breakfast</li>
+                        <li>1 week of Business Beat advertising</li>
+                        <li>Complimentary member spotlight in the e-newsletter, once per year</li>
+                        <li>Enhanced listing in Davenport Chamber website business directory</li>
+                        <li>YouTube video posted to Chamber channel, video provided by the member</li>
+                        <li>2 Tickets to the Annual Taste of Davenport signature event</li>
+                    </ul>
+                </div> <!-- End Silver -->
+                <div class="gold">
+                    <h3>Gold: $1,000</h3>
+                    <ul>
+                        <li>All Non-profit, Bronze, and Silver Benifits</li>
+                        <li>4 Complimentary member mailing labels with Excel spreadsheet</li>
+                        <li>Complimentary 4 weeks of Business Beat Advertising</li>
+                        <li>An enhanced listing with business logo in Davenport Chamber website directory</li>
+                        <li>Complimentary 2 weeks of Davenport Chamber website advertising</li>
+                        <li>24 Tickets to the Monthly Chamber Breakfast</li>
+                        <li>1 Promotion of an upcoming event on Chamber social media</li>
+                        <li>Complimentary tickets to each of the following Signature Events: Taste of Davenport,
+                            Davenport
+                            Business Awards</li>
+                        <li>Invitation to Annual Trustee Luncheon</li>
+                        <li>2 Promotions of upcoming events on Chamber social media</li>
+                        <li>Business name on Trustee banner at all Chamber events</li>
+                        <li>25% discount on website & newsletter advertising</li>
+                        <li>Recognition at Chamber Events, to include:
+                            <ul>
+                                <li>Business logo on Trustee banner displayed at all Chamber events</li>
+                                <li>Logo on event programs & invitations</li>
+                                <li>Recognition from the podium at each Monthly Chamber Breakfast</li>
+                                <li>Acknowledgment from emcee at each Signature Event</li>
+                            </ul>
+                        </li>
+                        <li>Complimentary display table set up at one Chamber Breakfast per year</li>
+                        <li>A featured story about your business, listed on the Chamber website and promoted twice on
+                            social
+                            media</li>
+                        <li>Logo on the home page of Davenport Chamber website</li>
+                    </ul>
+                </div> <!-- End Gold -->
+            </div> <!-- End Membership Options -->
+        </div><!-- End Membership Grid -->
+    </main>
+
+    <!-- Top Footer -->
+    <div class="footer-top-wrapper">
+        <footer>
+            <div class="footer-widgets">
+                <!-- Contact -->
+                <div class="section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Chamber Office: </strong><br>863-422-3751<br>
+                        <strong>Fax: </strong><br>863-422-4704<br>
+                        <strong>Member Tech Support: </strong><br>855-233-6362<br>
+                        <strong>General Chamber Information: </strong><br>info@davenportchamber.com<br>
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="davenport.html">Davenport</a></li>
+                        <li><a href="membership.html">Join</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="section">
+                    <!-- optamize -->
+                    <a href="https://www.facebook.com/" target="_blank"><img class="" src="images/facebook.png"
+                            alt="Facebook" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="" src="images/twitter.png"
+                            alt="Twitter" /></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="" src="images/youtube.png"
+                            alt="Youtube" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="" src="images/instagram.png"
+                            alt="Instagram" /></a>
+
+                    <!-- Join-->
+                    <h3>Become a Member</h3>
+                    <br>
+                    <button onClick="toMembership()">Join Now</button>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- End Top Footer -->
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom-wrapper">
+        <div class="footer-bottom">
+            <p>©<span id="year"></span> Davenport Chamber of Commerce; Last Updated: <span id="lastUpdated"></span>
+            </p>
+        </div>
+    </div> <!-- End Bottom Footer -->
+    <!-- JavaScript -->
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

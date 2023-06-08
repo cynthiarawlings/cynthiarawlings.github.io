@@ -1,0 +1,19 @@
+{
+    "staff": [
+        {
+            "first-name": "Lana",
+            "last-name": "Stripling",
+            "position": "Executive Director"
+        },
+        {
+            "first-name": "Edee",
+            "last-name": "Feliciano",
+            "position": "Communications"
+        },
+        {
+            "first-name": "Olivia",
+            "last-name": "Moorehead",
+            "position": "Media & Community Relations Coordinator"
+        }   
+    ]
+}

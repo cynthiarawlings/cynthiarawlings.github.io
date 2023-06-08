@@ -1,0 +1,28 @@
+{
+    "executive": [
+        {
+            "position": "Chair",
+            "first-name": "Teresa",
+            "last-name": "Connell",
+            "company": "State Farm Insurance"
+        },
+        {
+            "position": "Past Chair/ Treasurer",
+            "first-name": "Stacy",
+            "last-name": "Stokes",
+            "company": "CenterState Bank"
+        },
+        {
+            "position": "Secretary",
+            "first-name": "Stacy",
+            "last-name": "Towns",
+            "company": "Stacey Towns Realty, LLC"
+        },
+        {
+            "position": "Chair Elect",
+            "first-name": "Steve",
+            "last-name": "Tiner",
+            "company": "Ameriprise Financial Advisors"
+        }
+    ]
+}

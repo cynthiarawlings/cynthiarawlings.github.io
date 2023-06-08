@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Davenport's Chamber of Commerce.">
+    <meta name="author" content="Cynthia Rawlings">
+    <title>Contact Us: Davenport Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <div class="header-wrapper">
+        <header class="clearfix">
+            <!-- image needs to be optamized -->
+            <div class="main-header">
+                <a href="index.html"><img class="logo" src="images/logo100.png" alt="Chamber Logo" /></a>
+                <h1>Davenport Chamber of Commerce</h1>
+                <button class="hamburger-menu" onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <nav class="clearfix">
+                <ul id="primaryNav" class="hide">
+                    <!-- Navigation is reversed because of flex -->
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="membership.html">Join</a></li>
+                    <li><a href="davenport.html">Davenport</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="filler"></div>
+
+    <!-- Banner -->
+    <div class="main-banner">
+        <div>
+            <picture>
+                <source media="(max-width: 544px)" srcset="images/contact/contact-banner544.jpg">
+                <source media="(max-width: 1008px)" srcset="images/contact/contact-banner1008.jpg">
+                <img class="default" src="images/contact/contact-banner2000.jpg" alt="Davenport City">
+            </picture>
+        </div>
+    </div>
+
+    <!-- Board members from json -->
+    <main>
+        <div class="board-members">
+            <!-- Executive -->
+            <div class="executive-group">
+                <h1 class="contact-title">Executive Board</h1>
+                <div class="executive" id="executive"></div>
+            </div>
+            <!-- Board -->
+            <div class="board-group">
+                <h1 class="contact-title">Board of Directors</h1>
+                <div class="board" id="board"></div>
+            </div>
+            <!-- Staff -->
+            <div class="staff-group">
+                <h1 class="contact-title">Chamber Staff</h1>
+                <div class="staff" id="staff"></div>
+            </div>
+        </div>
+
+        <!-- Map Container -->
+        <div class="map-conatiner">
+            <!-- Chamber Address -->
+            <div class="contact-address">
+                <h2>Davenport Chamber of Commerce</h2>
+                <p>35610 Hwy 27<br>
+                    PO Box 986<br>
+                    Davenport, FL 33845
+                </p>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="google-map">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=davenport&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
+            </div> <!-- End Google Maps-->
+        </div> <!-- End Map Container -->
+
+        <!-- Bottom Row -->
+        <div class="contact-bottom-row">
+            <!-- Contact Info -->
+            <div class="card contact contact-contact">
+                <h2>Contact Us</h2>
+                <div class="contact-flex">
+                    <div class="space">
+                        <h3>Chamber Hours of Operation:</h3>
+                        <p>Monday - Thursday: 9:00 AM - 4:00 PM<br>
+                            Fridays: 10:00 AM - 3:00 PM<br>
+                            <i>Closed Weekends and Holidays</i>
+                        </p>
+                    </div>
+                    <div class="space">
+                        <h3>Phone Numbers:</h3>
+                        <p><strong>Chamber Office: </strong>863-422-3751<br>
+                            <strong>Fax: </strong>863-422-4704<br>
+                            <strong>Member Tech Support: </strong>855-233-6362<br>
+                            <strong>General Chamber Information: </strong>info@davenportchamber.com<br>
+                        </p>
+                    </div>
+
+                    <div class="space">
+                        <h3>Location and Mailing</h3>
+                        <p class="location"><strong>Davenport Chamber of Commerce</strong><br>
+                            35610 Hwy 27<br>
+                            PO Box 986<br>
+                            Davenport, FL 33845
+                        </p>
+                    </div>
+                </div><!-- end contact info -->
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-contact-form">
+                <form method="get" action="thanks.html">
+                    <h3>Send a Message</h3>
+                    <label class="">Name*<br>
+                        <input type="text" name="name" pattern="[A-Za-z ]{3,}" required>
+                    </label><br>
+                    <label class="">Email*<br>
+                        <input type="email" name="email" placeholder="someone@gmail.com" required>
+                    </label><br>
+                    <label>Comment*<br>
+                        <textarea class="text-box" name="comment" required></textarea>
+                    </label><br>
+                    <input type="submit" value="Send my Comment" class="submitBtn">
+                </form>
+            </div> <!--  end Contact Form -->
+        </div> <!--  End Bottom Row -->
+    </main>
+
+    <!-- Footer -->
+    <div class="footer-top-wrapper">
+        <footer>
+            <div class="footer-widgets">
+                <div class="section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Chamber Office: </strong><br>863-422-3751<br>
+                        <strong>Fax: </strong><br>863-422-4704<br>
+                        <strong>Member Tech Support: </strong><br>855-233-6362<br>
+                        <strong>General Chamber Information: </strong><br>info@davenportchamber.com<br>
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="davenport.html">Davenport</a></li>
+                        <li><a href="membership.html">Join</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <!-- optamize -->
+                    <a href="https://www.facebook.com/" target="_blank"><img class="" src="images/facebook.png"
+                            alt="Facebook" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="" src="images/twitter.png"
+                            alt="Twitter" /></a>
+                    <a href="https://youtube.com/" target="_blank"><img class="" src="images/youtube.png"
+                            alt="Youtube" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="" src="images/instagram.png"
+                            alt="Instagram" /></a>
+
+                    <h3>Become a Member</h3>
+                    <br>
+                    <button onClick="toMembership()">Join Now</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="footer-bottom-wrapper">
+        <div class="footer-bottom">
+            <p>©<span id="year"></span> Davenport Chamber of Commerce; Last Updated: <span id="lastUpdated"></span> </p>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

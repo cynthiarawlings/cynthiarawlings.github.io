@@ -1,0 +1,813 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Catamaran', sans-serif;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*
+COLORS
+BLUE
+#50A3AB
+Dark BLUE
+#37598B
+LIGHT Blue
+#599FC5
+Mint green
+#51C2AC
+GREEN
+#4DB884
+*/
+
+/*----------- HEADER --------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    min-width: 100%;
+}
+
+.main-header {
+    background-color: #50A3AB;
+    display: flex;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #fff;
+    align-self: end;
+}
+
+header img {
+    width: 80px;
+    padding: 0.5rem;
+}
+
+/*----------- NAVIGATION --------------*/
+
+nav ul {
+    border-top: 4px solid white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #50A3AB;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+nav ul li.active a {
+    background-color: #4DB884;
+    color: black;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.filler {
+    height: 5rem;
+}
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 1rem;
+    min-height: 20rem;
+    font-size: 1.25rem;
+}
+
+/*----------- Home--------------*/
+
+.main-banner {
+    position: relative;
+}
+
+.main-banner img {
+    width: 100%;
+}
+
+.main-banner h1 {
+    font-size: 2rem;
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #37598B;
+    width: 100%;
+}
+
+.card {
+    background-color: #599FC5;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.card h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mission {
+    padding: 0;
+    background-color: #4DB884;
+}
+
+.mission-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mission img {
+    width: 100%;
+}
+
+.contact {
+    background-color: #599FC5;
+}
+
+.contact p, .advertisement p {
+    line-height: 2rem;
+}
+
+.location {
+    margin-top: 0;
+}
+
+.submitBtn {
+    background-color: transparent;
+    border: 4px solid black;
+    padding: 0.5rem;
+    color: black;
+}
+
+legend {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+input, .text-box {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.advertisement {
+    background-color: #37598B;
+    color: white;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+.advertisement a {
+    color: white;
+}
+
+.advertisement img {
+    width: 100%;
+}
+
+.text {
+    padding: 0 2%;
+    margin-bottom: 1rem;
+}
+
+.membership {
+    background-color: #4DB884;
+    padding: 0;
+}
+
+.membership-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.membership img {
+    width: 100%;
+}
+
+.membership button {
+    background-color: transparent;
+    border: 4px solid black;
+    padding: 0.5rem;
+    color: black;
+}
+
+.membership a {
+    text-decoration: none;
+    color: black;
+}
+
+.events li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-container {
+    background-color: #37598B;
+    text-align: center;
+    color: white;
+}
+
+.weather-grid .current img {
+    width: 100%;
+}
+
+.weather-container {
+    margin-bottom: 1rem;
+}
+
+.weather-container .weather-grid .alert {
+    background-color: #4DB884;
+}
+
+.weather-container .card {
+    background-color: transparent;
+}
+
+.current-weather {
+    line-height: 2rem;
+}
+
+.current {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    padding-top: 1rem;
+}
+
+.text-on-image {
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+
+.alert {
+    background-color: #4DB884;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#weather-close {
+    background: transparent;
+    border: none;
+}
+
+.alert {
+    text-align: left;
+}
+
+.forecast-name {
+    padding-top: 1rem;
+}
+
+.forecast-temp {
+    padding-bottom: 1rem;
+}
+
+/*----------- Davenport --------------*/
+
+.page-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mySlides1, .mySlides2 {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Caption text */
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.demographics {
+    background-color: #37598B;
+    color: white;
+}
+
+.demo-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.household-table {
+    padding: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+}
+
+thead tr th {
+    background-color: #50A3AB;
+    font-size: 2rem;
+    font-family: Catamaran, serif;
+}
+
+tfoot tr td {
+    background-color: #50A3AB;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: Catamaran, serif;
+}
+
+tbody tr th {
+    background-color: #4DB884;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #599FC5;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+#special {
+    background-color: #628ca6;
+    color: white;
+}
+
+.commitment {
+    background-color: #4DB884;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.event {
+    margin: 1rem;
+}
+
+.event-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*----------- Davenport --------------*/
+.event a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+/*----------- Directory --------------*/
+
+section {
+    background-color: #599FC5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section img {
+    width: 100%;
+    padding: 1rem;
+}
+
+section h2 {
+    margin: 1rem;
+    padding: 0;
+}
+
+section p {
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0;
+    overflow-wrap: anywhere;
+    
+}
+
+.material-icons {
+    color: #37598B;
+}
+
+.button-box {
+    display: none;
+}
+/* Contact Board Members */
+section h3 {
+    font-family: EB Garamond;
+    font-style: italic;
+    color: black;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+section h2 {
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+section h4 {
+    font-style: italic;
+    color: black;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+/* Join */
+.sbs {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.sbs p {
+    margin: 0;
+    padding: 0;
+}
+
+.non-profit {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bronze {
+    background-color: #599FC5;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.silver {
+    background-color: #50A3AB;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gold {
+    background-color: #4DB884;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    color: #37598B;
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+legend {
+    color: #37598B;
+    border: none;
+    font-weight: bold;
+}
+/* Contact Google Maps */
+
+/* .mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 1080px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 1080px;
+}
+
+iframe {
+    width: 1080px;
+    height: 500px;
+} */
+
+/* .google-maps-large {
+    margin-bottom: 1rem;
+    width: 100%;
+} */
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin: 0;
+    /* frameborder="0" scrolling="no" marginheight="0" marginwidth="0" */
+}
+/* Contact */
+.contact-contact-form {
+    background-color: #37598B;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.contact-contact-form .submitBtn {
+    color: white;
+    border-color: white;
+}
+
+.contact-contact-form input {
+    color: white;
+    border-color: white;
+}
+
+.contact-contact {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/*----------- FOOTER --------------*/
+
+footer {
+    font-size: 1rem;
+}
+
+footer img {
+    width: 20px;
+    margin: 0.5rem;
+}
+
+/*----------- remove width after optamizing --------------*/
+
+footer img {
+    width: 20px;
+    margin: 0.5rem;
+}
+
+.footer-widgets {
+    background-color: #599FC5;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.footer-widgets button {
+    background-color: transparent;
+    border: 4px solid black;
+    padding: 0.5rem;
+    color: black;
+}
+
+.footer-widgets button a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-widgets p, .footer-widgets li {
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.footer-widgets h3 {
+    margin-bottom: 0.5rem;
+}
+
+.section {
+    margin: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li a {
+    color: black;
+    display: block;
+}
+
+.footer-bottom {
+    background-color: #50A3AB;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-bottom p {
+    color: black;
+    margin: 0;
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix-footer {
+    content: "";
+    clear: both;
+}

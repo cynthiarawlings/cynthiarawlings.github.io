@@ -1,0 +1,214 @@
+{
+    "business": [
+        {
+            "name": "AdventHealth",
+            "logo": "images/directory/adventhealth.jpg",
+            "phone": "863-422-4971",
+            "street": "40100 U.S. Hwy. 27",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33897",
+            "website": "https://www.adventhealth.com/hospital/adventhealth-heart-florida"
+        },
+        {
+            "name": "Beef 'O' Brady's",
+            "logo": "images/directory/beef-o-bradys.jpg",
+            "phone": "863-420-3350",
+            "street": "45653 Highway 27",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33897",
+            "website": "https://www.beefobradys.com/" 
+        },
+        {
+            "name": "Cracker Barrel Old Country Store",
+            "logo": "images/directory/cracker-barrel-old-county-store.jpg",
+            "phone": "863-424-8100",
+            "street": "111 Dunson Lane",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33896",
+            "website": "https://www.crackerbarrel.com/" 
+        },
+        {
+            "name": "Davenport School of the Arts PTO",
+            "logo": "images/directory/davenport-school-of-the-aets-pto.jpg",
+            "phone": "954-701-7896",
+            "street": "4751 County Road 547N",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33838",
+            "website": "http://www.davenportschoolofthearts.com/" 
+        },
+        {
+            "name": "Elite Realty Agency, LLC",
+            "logo": "images/directory/elite-realty-agency-llc.jpg",
+            "phone": "407-574-3962",
+            "street": "2416 Sand Mine Road",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33897",
+            "website": "https://eliterealtyagency.com/"
+        },
+        {
+            "name": "Family Care Aesthetics",
+            "logo": "images/directory/family-care-aesthetics.jpg",
+            "phone": "863-220-7173",
+            "street": "2302 North Blvd. W. Suite D",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://welovefamilycare.com/"
+        },
+        {
+            "name": "General Federation of Women's Clubs Four Corners Jr. Woman's Club",
+            "logo": "images/directory/general-federation-of-womens-clubs-four-corners-jr-womans-club.jpg",
+            "phone": "240-463-8228",
+            "street": "8297 Championsgate Boulevard",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://gfwcfourcorners.org/"
+        },
+        {
+            "name": "Holiday Builders",
+            "logo": "images/directory/holiday-builders.jpg",
+            "phone": "863-698-1142",
+            "street": "203 Town Center Blvd",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33896",
+            "website": "https://www.holidaybuilders.com/"
+        },
+        {
+            "name": "Integrity First Title",
+            "logo": "images/directory/integrity-first-title.jpg",
+            "phone": "863-410-0410",
+            "street": "2750 Deer Creek Commerce Lane",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://integrityfirsttitle.com/"
+        },
+        {
+            "name": "JCK Graphics Design",
+            "logo": "images/directory/jck-graphics-design.jpg",
+            "phone": "407-446-9432",
+            "street": "437 Aldridge Ln.",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://jckgraphics.com/"
+        },
+        {
+            "name": "Lake House Apartments",
+            "logo": "images/directory/lake-house-apartments.jpg",
+            "phone": "863-420-1654",
+            "street": "200 Village Blvd.",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33896",
+            "website": "https://www.lifeatlakehouse.com/"
+        },
+        {
+            "name": "Manaswi's Orthopedic and Joint Replacement Institute PLLC",
+            "logo": "images/directory/manaswis-orthopedic-and-joint-replacement-institute-pllc.jpg",
+            "phone": "863-419-8922",
+            "street": "2231 North Blvd. W.",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://www.orthopedicjointreplacementfl.com/"
+        },
+        {
+            "name": "Navigator Academy of Leadership Davenport",
+            "logo": "images/directory/navigator-academy-of-leadership-davenport.jpg",
+            "phone": "954-882-6750",
+            "street": "495 Holly Hill Rd",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://navigatoracademypolk.com/"
+        },
+        {
+            "name": "Oldcastle Lawn & Garden",
+            "logo": "images/directory/oldcastle-law-and-garden.jpg",
+            "phone": "863-422-8220",
+            "street": "2427 RWS Ranch Road",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://www.oldcastleapg.com/"
+        },
+        {
+            "name": "Performer's Edge Dance Center",
+            "logo": "images/directory/performers-edge-dance-center.jpg",
+            "phone": "863-424-7355",
+            "street": "195 Ashbourne Way",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://www.performersedgedance.com/"
+        },
+        {
+            "name": "Ridgeview Global Studies Academy",
+            "logo": "images/directory/ridgeview-global-studies-academy.jpg",
+            "phone": "863-419-3171",
+            "street": "1000 Dunson Road",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33896",
+            "website": "http://www.rgsa.com/"
+        },
+        {
+            "name": "St. Charles Veterinary Hospital",
+            "logo": "images/directory/st-charles-veterniary-hospital.jpg",
+            "phone": "863-438-6600",
+            "street": "2360 North Blvd. W",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://www.stcharlesvethospital.com/"
+        },
+        {
+            "name": "The Sunshine Foundation Dream Village",
+            "logo": "images/directory/the-sunshine-foundation-dream-village.jpg",
+            "phone": "863-424-4188",
+            "street": "5400 County Rd 547 N",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://www.sunshinefoundation.org/"
+        },
+        {
+            "name": "Upsite Group",
+            "logo": "images/directory/upsite-group.jpg",
+            "phone": "863-578-7410",
+            "street": "P.O. BOX 2693",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33836",
+            "website": "https://www.upsitegroup.com/"
+        },
+        {
+            "name": "Visit Central Florida",
+            "logo": "images/directory/visit-central-florida.jpg",
+            "phone": "800-828-7655",
+            "street": "101 Adventure Court",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://visitcentralflorida.org/"
+        },
+        {
+            "name": "Woodspring Suites Davenport",
+            "logo": "images/directory/woodspring-suits-davenport.jpg",
+            "phone": "844-974-6835",
+            "street": "702 Champions Drive",
+            "city": "Davenport",
+            "state": "FL",
+            "zip": "33837",
+            "website": "https://www.woodspring.com/"
+        }
+    ]
+}
