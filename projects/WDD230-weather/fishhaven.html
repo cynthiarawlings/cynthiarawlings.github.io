@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Cynthia Rawlings' Weather Site Project for BYUI.">
+    <meta name="author" content="Cynthia Rawlings">
+    <title>Fish Haven: Wandering Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="storm logo" /></a>
+            <h1>Wandering Weather</h1>
+            <h2>Where will the Weather take you?</h2>
+        </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; MENU</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+    <main>
+        <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <h1 id="page-name">Fish Haven</h1>
+        <div class="hero">
+            <p class="summary">Weather Summary<br>
+                Temprature: <span id="temp"></span>&deg; F<br>
+                Wind Speed: <span id="speed"></span> mph<br>
+                <span id="chill"></span>
+            </p>
+
+            <picture class="hero-image">
+                <source media="(max-width: 400px)" srcset="images/fish-haven/fish-haven-hero400.jpg">
+                <source media="(max-width: 800px)" srcset="images/fish-haven/fish-haven-hero800.jpg">
+                <source media="(max-width: 971px)" srcset="images/fish-haven/fish-haven-hero971.jpg">
+                <img class="broke" src="images/fish-haven/fish-haven-hero971.jpg" alt="Lake.">
+            </picture>
+        </div>
+
+        <!-- Five Day Forecast -->
+        <h2>Five Day Forecast</h2>
+        <div id="forecast"></div>
+
+        <h2>Bear Lake</h2>
+        <div class="article">
+            <picture class="article-image top">
+                <source media="(max-width: 400px)" srcset="images/fish-haven/fish-haven-event300.jpg">
+                <source media="(max-width: 520px)" srcset="images/fish-haven/fish-haven-event520.jpg">
+                <img class="broke" src="images/fish-haven/fish-haven-event520.jpg" alt="Lake.">
+            </picture>
+            <p>"Bear Lake is a natural freshwater lake on the Idaho–Utah border in the Western United States. About 109
+                square miles (280 km2) in size, it is split about equally between the two states; its Utah portion
+                comprises the second-largest natural freshwater lake in Utah, after Utah Lake. The lake has been
+                called the "Caribbean of the Rockies" for its unique turquoise-blue color, which is due to the
+                refraction of calcium carbonate (limestone) deposits suspended in the lake. Its water properties have
+                led to the evolution of several unique species of fauna that occur only within the lake. Bear Lake is
+                over 250,000 years old. It was formed by fault subsidence that continues today, slowly deepening the
+                lake along the eastern side."
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Bear_Lake_(Idaho%E2%80%93Utah)" target="_blank">- Wikipedia</a>
+            <picture class="article-image bottom">
+                <source media="(max-width: 400px)" srcset="images/fish-haven/fish-haven-event300.jpg">
+                <source media="(max-width: 520px)" srcset="images/fish-haven/fish-haven-event520.jpg">
+                <img class="broke" src="images/fish-haven/fish-haven-event520.jpg" alt="Lake.">
+            </picture>
+        </div>
+        
+        <h2 class="event-header">Upcoming Events</h2>
+        <div class="event"></div>
+
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+
+            <div class="address-container">
+                <h3>Address</h3>
+                <p>The Weather Center<br>
+                    123 Main Street.<br>
+                    Franklin, MI 87654</p>
+            </div>
+            <div class="phone-container">
+                <h3>Phone</h3>
+                <p>(801) 555-1234</p>
+                <h3>Email</h3>
+                <p>contact@yoururl.com</p>
+            </div>
+        </div>
+
+        <div class="google-maps-large">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_canvas"
+                        src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div id="footerWrapper" class="clearfix-footer">
+        <footer>
+            &copy; Cynthia Rawlings &bull; Last Updated <span id="lastUpdated"></span>
+        </footer>
+    </div>
+    <!-- javascript HERE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

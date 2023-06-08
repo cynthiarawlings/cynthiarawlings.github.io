@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Cynthia Rawlings' Weather Site Project for BYUI.">
+    <meta name="author" content="Cynthia Rawlings">
+    <title>Storm Center: Wandering Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+
+<body>
+    
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="storm logo" /></a>
+            <h1>Wandering Weather</h1>
+            <h2>Where will the Weather take you?</h2>
+        </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; MENU</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+    <main>
+        <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <h1 id="page-name">Storm Center</h1>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">Full Name*<input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip*<input type="number" name="zip" placeholder="12345" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div>Storm Type</div>
+                <label class="sbs"><input type="checkbox" name="flood" value="yes"> Flash Flood</label>
+                <label class="sbs"><input type="checkbox" name="hail" value="yes"> Hail</label>
+                <label class="sbs"><input type="checkbox" name="hurricane" value="yes"> Hurricane</label>
+                <label class="sbs"><input type="checkbox" name="thunderstorm" value="yes"> Thunderstorm</label>
+                <label class="sbs"><input type="checkbox" name="tornado" value="yes"> Tornado</label>
+
+                <label class="flexly" for="rating">Storm Severity<br>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+
+                <label class="top">Storm Region
+                    <select name="subject">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                    </select>
+                </label>
+
+                <div>Are you in Danger</div>
+                <label class="sbs"><input type="radio" name="danger" value="beginner"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="intermediate"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="advanced"> No</label>
+
+                <label class="top">Additional Information <br> <textarea name="additionalInformation"></textarea></label>
+               
+                <input type="submit" value="Report Storm" class="submitBtn">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div id="footerWrapper" class="clearfix-footer">
+        <footer>
+            &copy; Cynthia Rawlings &bull; Last Updated <span id="lastUpdated"></span>
+        </footer>
+    </div>
+    <!-- javascript HERE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

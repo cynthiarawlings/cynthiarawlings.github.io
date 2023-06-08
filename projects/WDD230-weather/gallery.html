@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Cynthia Rawlings' Weather Site Project for BYUI.">
+    <meta name="author" content="Cynthia Rawlings">
+    <title>Gallery: Wandering Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="storm logo" /></a>
+            <h1>Wandering Weather</h1>
+            <h2>Where will the Weather take you?</h2>
+        </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; MENU</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1 id="page-name">Gallery</h1>
+        <div class="gallery-grid">
+            <!-- IMAGE 1: CLEAR SKY -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/clear-sky299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/clear-sky472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/clear-sky542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/clear-sky542.jpg" alt="Clear sky above grass.">
+                </picture>
+                <h2>Clear Skies</h2>
+            </div>
+
+            <!-- IMAGE 2: FOGGY CITY -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/foggy-city299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/foggy-city472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/foggy-city542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/foggy-city542.jpg" alt="City covered with fog.">
+                </picture>
+                <h2>Foggy City</h2>
+            </div>
+            <!-- IMAGE 3: FOGGY FORREST -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/foggy-forrest299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/foggy-forrest472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/foggy-forrest542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/foggy-forrest542.jpg" alt="Forrest covered with fog.">
+                </picture>
+                <h2>Foggy Forrest</h2>
+            </div>
+            <!-- IMAGE 4: HURRICANE -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/hurricane299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/hurricane472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/hurricane542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/hurricane542.jpg" alt="Hurricane view from space.">
+                </picture>
+                <h2>Hurricane</h2>
+            </div>
+            <!-- IMAGE 5: LIGHTNING -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/lightning299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/lightning472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/lightning542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/lightning542.jpg" alt="Lightning at night.">
+                </picture>
+                <h2>Lightning</h2>
+            </div>
+            <!-- IMAGE 6: NIGHT SKY -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/night-sky299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/night-sky472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/night-sky542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/night-sky542.jpg" alt="Clear sky at night.">
+                </picture>
+                <h2>Starry Skies</h2>
+            </div>
+            <!-- IMAGE 7: RAINBOW -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/rainbow299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/rainbow472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/rainbow542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/rainbow542.jpg" alt="Rainbow over a field.">
+                </picture>
+                <h2>Rawinbow</h2>
+            </div>
+            <!-- IMAGE 8: SNOWY CABIN -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/snowy-cabin299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/snowy-cabin472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/snowy-cabin542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/snowy-cabin542.jpg" alt="Cabin in the snow.">
+                </picture>
+                <h2>Snowy Cabin</h2>
+            </div>
+            <!-- IMAGE 9: SNOWY ROAD -->
+            <div class="gallery-card">
+                <picture class="gallery-image">
+                    <source media="(max-width: 299px)" srcset="images/gallery/snowy-road299.jpg">
+                    <source media="(max-width: 472px)" srcset="images/gallery/snowy-raod472.jpg">
+                    <source media="(max-width: 542px)" srcset="images/gallery/snowy-road542.jpg">
+                    <img class="broke" src='images/placeholder400.jpg'
+                        data-src="images/gallery/snowy-road542.jpg" alt="Road in the snow.">
+                </picture>
+                <h2>Snowy Road</h2>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div id="footerWrapper" class="clearfix-footer">
+        <footer>
+            &copy; Cynthia Rawlings &bull; Last Updated <span id="lastUpdated"></span>
+        </footer>
+    </div>
+    <!-- javascript HERE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>
