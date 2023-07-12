@@ -1,0 +1,71 @@
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+
+.screen-container {
+    // Takes up the entire screen. The rows are for position the text box
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 0.75fr 1fr;
+    // overflow: hidden;
+}
+
+.full-background {
+    // Position in the screen container
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    // Takes up the entire screen with the center in focus
+    background-image: url("../assets/forest-ai-v1.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.active-character {
+    // Position in the scren container
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    z-index: 1;
+
+    // The bottom of the images touches the bottom of the screen and the character is centered
+    display: flex;
+    justify-content: center;
+    img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.text-box {
+    // Position in the scren container
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    z-index: 2;
+
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 30rem;
+    margin: 0 auto;
+    p {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+}
