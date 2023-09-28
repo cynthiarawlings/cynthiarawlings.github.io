@@ -1,0 +1,27 @@
+You: Hello
+AI: Hello!
+
+You: It's nice to meet you
+AI: Hello!
+
+You: my name is Valentine
+AI: Nice to meet you, Valentine!
+
+You: What
+AI: Hello!
+
+You: is your name?
+AI: I'm not sure, can you please clarify?
+
+You: What is your name?
+AI: How can I help you?
+
+You: I'll call you Dawn for now.
+AI: How can I help you?
+
+You: Is that ok?
+AI: How can I help you?
+
+You: /usr/local/bin/python3 /Users/valentine/Desktop/cynthiarawlings.github.io/personal-projects/dawn-ai/test.py
+AI: [94mHello![0m
+

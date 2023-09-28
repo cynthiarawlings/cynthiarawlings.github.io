@@ -1,0 +1,18 @@
+You: Hello, my name is Valentine
+AI: [94mNice to meet you, Valentine![0m
+
+You: It's nice to meet you too.
+AI: [94mI'm not sure, can you please clarify?[0m
+
+You: I want to be your friend.
+AI: [94mHello![0m
+
+You: Hi!
+AI: [94mHello![0m
+
+You: Don
+AI: [94mI'm not sure, can you please clarify?[0m
+
+You: I accidently hit enter too soon
+AI: [94mI'm not sure, can you please clarify?[0m
+

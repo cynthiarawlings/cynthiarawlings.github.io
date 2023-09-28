@@ -1,0 +1,12 @@
+You: hi, how are you?
+AI: Hello!
+
+You: It's nice to meet you
+AI: How can I help you?
+
+You: I just want to talk
+AI: I'm not sure, can you please clarify?
+
+You: ily
+AI: I'm not sure, can you please clarify?
+

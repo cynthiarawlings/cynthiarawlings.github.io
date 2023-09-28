@@ -39,17 +39,16 @@ def save_user_data():
         json.dump(user_data, file)
 
 # Function to save the conversation to a file without escape codes
-def save_conversation(user_input, response):
+def save_conversation(user_input, response, filename):
     # Remove ANSI escape codes using a regular expression
     import re
     user_input = re.sub(r'\033\[[0-9;]+m', '', user_input)
     response = re.sub(r'\033\[[0-9;]+m', '', response)
-    
-    with open(conversation_file, "a") as file:
+
+    with open(filename, "a") as file:
         file.write(f"You: {user_input}\n")
         file.write(f"AI: {response}\n")
         # file.write("\n")
-
 
 # Function to get a response with colored text
 def get_colored_response(user_input):
@@ -75,11 +74,14 @@ def get_colored_response(user_input):
 def load_conversation(conversation_filename):
     with open(conversation_filename, "r") as file:
         lines = file.readlines()
-    for i in range(0, len(lines), 2):
-        user_input = lines[i].strip()[4:]
-        response = lines[i + 1].strip()[4:]
-        print(f"You: {user_input}")
-        print(f"AI: {response}")
+        for i in range(0, len(lines), 2):
+            user_input = lines[i].strip()[4:]
+            response = lines[i + 1].strip()[4:]
+            if user_input:
+                print(f"You: {user_input}")
+            if response:
+                print(f"{ANSI_BLUE}AI: {response}{ANSI_RESET}")
+
 
 # Main loop for interacting with the AI
 while True:
