@@ -1,0 +1,12 @@
+You: Hello
+AI: [94mHello![0m
+
+You: It's nice to meet you, my name is Valentine
+AI: [94mNice to meet you, Valentine![0m
+
+You: Hello!
+AI: How can I help you?
+
+You: I want to be your friend!
+AI: How can I help you?
+
