@@ -1,3 +1,0 @@
-You: hi
-AI: [94mHello![0m
-

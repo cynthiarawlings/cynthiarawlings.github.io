@@ -1,8 +1,0 @@
-You: hello
-AI: How can I help you?
-You: it's nice to meet you
-AI: How can I help you?
-You: my name is Valentine
-AI: Nice to meet you, Valentine!
-You: how are you doing?
-AI: How can I help you?

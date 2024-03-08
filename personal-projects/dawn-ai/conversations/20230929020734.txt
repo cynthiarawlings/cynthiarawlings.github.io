@@ -1,8 +1,0 @@
-You: hi
-AI: Hello!
-You: its nice to meet you
-AI: How can I help you?
-You: I'm just testing things
-AI: How can I help you?
-You: fancy that!
-AI: I'm not sure, can you please clarify?
